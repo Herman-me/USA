@@ -19,7 +19,7 @@
 				<div class="row">
 					<div class="col-sm-3 userinfo">
 						<i class="fas fa-user"></i>
-						<h5>نام و نام خوانوادگی: مهدی رحیمی</h5> 
+						<h5>نام و نام خوانوادگی: مهدی رحیمی</h5>
 						<h5>Personal Code : <span style="color:red">245</span></h5>
 						<p>توضیحات : <br>
 							اقای مهدی رحیمی مدرس درس های دینی و تاریخ و با علاقه بودن شغل انبیا است
@@ -51,16 +51,17 @@
 						<button >بر اثاث نمره مرتب کن</button>
 					</div>
 					<div class="col-sm-6 actions">
-						<i class="fas fa-list-ul">
-							<div class="qac">
-								<ul>
-									<li>دیدن مشخصات کتاب</li>
-								</ul>
-							</div>
+						<div class="buts">
+							<a href="setting.php"><button type="button" name="button">تنظیمات کابر <i class="fas fa-cog"></i> </button></a>
+							<button type="button" name="button">بخش معدل گیری</button>
+							<button type="button" name="button">لیست دانشجویان <i class="fas fa-list-ul"></i> </button>
+							<button type="button" name="button">بخش نمره دهی</button>
+							<button type="button" name="button">خروج از وبسایت <i class="fas fa-sign-out-alt"></i> </button>
+						</div>
 						</i>
 					</div>
 
-					
+
 				</div>
 			</div>
 		</div>
