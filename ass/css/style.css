@@ -383,3 +383,25 @@ body{
     .pad{
       padding:10px 30px 30px 30px;
     }
+    .score-inputs input[type='text'],input[type='number']{
+      padding:5px;
+      background-color:transparent;
+      border:1px solid;
+      border-radius: 10px;
+    }
+    .score-inputs input[type='submit']{
+      padding:10px;
+      background-color:green;
+      width:20%;
+      border:1px solid green;
+      border-radius: 5px;
+      color:white;
+    }
+    .score-inputs button{
+      padding:10px;
+      background-color:red;
+      width:20%;
+      border:1px solid red;
+      border-radius: 5px;
+      color:white;
+    }

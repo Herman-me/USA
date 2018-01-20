@@ -53,9 +53,9 @@
 					<div class="col-sm-3 actions">
 						<div class="buts">
 							<a href="setting.php"><button type="button" name="button">تنظیمات کابر <i class="fas fa-cog"></i> </button></a>
-							<a href="gpa.php"><button type="button" name="button">بخش معدل گیری</button></a>
+					 		<a href="gpa.php"><button type="button" name="button">بخش معدل گیری</button></a>
 							<button type="button" name="button">لیست دانشجویان <i class="fas fa-list-ul"></i> </button>
-							<button type="button" name="button">بخش نمره دهی</button>
+							<a href="score.php"><button type="button" name="button">بخش نمره دهی</button></a>
 							<button type="button" name="button">خروج از وبسایت <i class="fas fa-sign-out-alt"></i> </button>
 						</div>
 						</i>
