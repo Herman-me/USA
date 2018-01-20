@@ -162,7 +162,7 @@ body{
       border-radius: 5px;
       padding-bottom: 10px;
       margin-bottom: 20px;
-      display: table-cell;
+      /* display: table-cell; */
       vertical-align: top;
     }
     .head{
@@ -178,7 +178,7 @@ body{
       text-align: center;
       /*border-left:1px solid #aaa;*/
       padding-bottom: 40px;
-      display: table-cell;
+      /* display: table-cell; */
       vertical-align: top;
     }
     .userinfo svg{
@@ -190,7 +190,7 @@ body{
     .lastSt{
       background-color: #ffffaf;
       /*border-left: 1px solid #aaa;*/
-      display: table-cell;
+      /* display: table-cell; */
       vertical-align: top;
     }
     .lastSt svg{
@@ -202,9 +202,12 @@ body{
     }
     .listSt{
       overflow: auto;
+      overflow: overlay;
+      -webkit-overflow: overlay;
+      -moz-overflow: overlay;
       height: 250px;
-      border-left:1px solid lightgray;
-      border-right:1px solid lightgray;
+      /* border-left:1px solid lightgray;
+      border-right:1px solid lightgray; */
     }
     .listSt li{
       text-align: center;
@@ -239,7 +242,7 @@ body{
       background-color:#2A80B9;
       border-radius: 5px;
       color:white;
-      width:40%;
+      width:90%;
       display: block;
       margin:auto;
       margin-bottom: 20px;
@@ -372,4 +375,11 @@ body{
       padding:10px;
       line-height: 27px;
       margin-bottom: 10px;
+    }
+    .st-select{
+      height:400px;
+      padding:40px;
+    }
+    .pad{
+      padding:10px 30px 30px 30px;
     }

@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+	<?php include 'includes/header.php'; ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 ostadPage">
@@ -28,7 +28,7 @@
 						<h5>آخرین مدرک تحصیلی : <span style="color:green">دکترا</span></h5>
 						<button>انتخاب درس</button>
 					</div>
-					<div class="col-sm-3 lastSt">
+					<div class="col-sm-6 lastSt">
 						<i class="fas fa-graduation-cap"></i>
 						<div class="listSt">
 							<ul>
@@ -50,10 +50,10 @@
 						<button>بر اثاث نمره مرتب کن</button>
 						<button >بر اثاث نمره مرتب کن</button>
 					</div>
-					<div class="col-sm-6 actions">
+					<div class="col-sm-3 actions">
 						<div class="buts">
 							<a href="setting.php"><button type="button" name="button">تنظیمات کابر <i class="fas fa-cog"></i> </button></a>
-							<button type="button" name="button">بخش معدل گیری</button>
+							<a href="gpa.php"><button type="button" name="button">بخش معدل گیری</button></a>
 							<button type="button" name="button">لیست دانشجویان <i class="fas fa-list-ul"></i> </button>
 							<button type="button" name="button">بخش نمره دهی</button>
 							<button type="button" name="button">خروج از وبسایت <i class="fas fa-sign-out-alt"></i> </button>
