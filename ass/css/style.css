@@ -160,6 +160,10 @@ body{
       margin-top:100px;
       /*padding: 10px;*/
       border-radius: 5px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: table-cell;
+      vertical-align: top;
     }
     .head{
       text-align: center;
@@ -172,8 +176,10 @@ body{
     }
     .userinfo{
       text-align: center;
-      border-left:1px solid #aaa;
+      /*border-left:1px solid #aaa;*/
       padding-bottom: 40px;
+      display: table-cell;
+      vertical-align: top;
     }
     .userinfo svg{
       font-size:100px;
@@ -181,4 +187,49 @@ body{
       margin:50px auto;
       margin-bottom: 30px;
     }
-    
+    .lastSt{
+      background-color: #ffffaf;
+      /*border-left: 1px solid #aaa;*/
+      display: table-cell;
+      vertical-align: top;
+    }
+    .lastSt svg{
+      font-size:100px;
+      display: block;
+      margin:50px auto;
+      margin-bottom: 30px;
+      color:#2A80B9;
+    }
+    .listSt{
+      overflow: auto;
+      height: 250px;
+      border-left:1px solid lightgray;
+      border-right:1px solid lightgray;
+    }
+    .listSt li{
+      text-align: center;
+      list-style: none;
+    }
+    .lastSt button{
+      display: block;
+      margin:auto;
+      width: 100%;
+      padding:3px;
+      border:1px solid white;
+      background-color:white;
+      margin-bottom: 5px;
+    }
+    .userinfo button{
+      padding:10px;
+      border:1px solid white;
+      background-color:#2A80B9;
+      border-radius: 5px;
+      color:white;
+      width:60%;
+    }
+    .actions svg{
+      font-size:100px;
+      display: block;
+      margin:50px auto;
+      margin-bottom: 30px;
+    }

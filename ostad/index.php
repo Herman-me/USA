@@ -8,10 +8,10 @@
 						<i class="fas fa-user"></i> مشخصات شما
 					</div>
 					<div class="col-sm-3 head">
-						اخرین ها <i class="fas fa-list"></i>
+						اخرین دانشجو های شما <i class="fas fa-list"></i>
 					</div>
 					<div class="col-sm-6 head">
-						وضعیت دانش آموزان
+						دسترسی سریع
 					</div>
 				</div>
 				<!-- End of heads -->
@@ -26,7 +26,41 @@
 						</p>
 						<h5>تعداد دانشجویان : <span style="color:red"> 14</span></h5>
 						<h5>آخرین مدرک تحصیلی : <span style="color:green">دکترا</span></h5>
+						<button>انتخاب درس</button>
 					</div>
+					<div class="col-sm-3 lastSt">
+						<i class="fas fa-graduation-cap"></i>
+						<div class="listSt">
+							<ul>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
+							</ul>
+						</div>
+						<button>بر اثاث نمره مرتب کن</button>
+						<button >بر اثاث نمره مرتب کن</button>
+					</div>
+					<div class="col-sm-6 actions">
+						<i class="fas fa-list-ul">
+							<div class="qac">
+								<ul>
+									<li>دیدن مشخصات کتاب</li>
+								</ul>
+							</div>
+						</i>
+					</div>
+
+					
 				</div>
 			</div>
 		</div>
