@@ -81,6 +81,7 @@ body{
     }
 
     .student button{
+      color:black !important;
       padding:10px;
       background-color:transparent;
       border:2px solid #2A80B9;
@@ -89,8 +90,19 @@ body{
     }
     .student button:hover{
       background-color:white;
-      border:none;
+      /* border:1px solid white; */
+
     }
+    .box button{
+      transition: .2s;
+      color:white;
+    }
+    .box button:hover{
+      background-color:white;
+      /* border:1px solid white; */
+      color:black;
+    }
+
     .ostad img{
       width: 100px;
       display: block;
@@ -98,6 +110,7 @@ body{
       margin: auto;
       padding-top: 100px;
     }
+
     .ostad button{
       padding:10px;
       background-color:transparent;
@@ -119,13 +132,22 @@ body{
       border-radius: 3px;
 
     }
-    .form-frame input[type='text'],input[type='email'],input[type='password'],input[type='number'] {
-      background-color: #aaa;
+    .form-frame input[type='text'],input[type='email'],input[type='password'] {
+      /* background-color: #aaa; */
       padding:10px;
       width: 96%;
-      border:1px solid white;
-      border-radius: 3px;
-      color:white;
+      border:1px solid #aaa;
+      border-radius: 5px;
+      color:black;
+
+    }
+    .form-frame input[type='number']{
+      /* background-color: #aaa; */
+      padding:10px;
+      width: 96%;
+      border:1px solid #aaa;
+      border-radius: 7px;
+      color:black;
     }
     .form-frame input[type='submit']{
       background-color:#2A80B9;

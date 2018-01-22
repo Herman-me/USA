@@ -1,5 +1,5 @@
 <?php include "includes/header.php";
-    echo 
+    echo
     '<div class="container">
       <div class="row">
         <div class="col-sm-12 whole">
@@ -11,8 +11,8 @@
                   اگر دانش آموز هستید از اینجا وارد شوید <br>
                   شما باید همه ی <a href="">قوانین</a> استفاده از وبسایت را مطالعه کنید
                 </p><br>
-                <button>ورود به بخش دانشجویی <i class="fas fa-sign-in-alt"></i> </button>
-                <button> <i class="fas fa-user-plus"></i>  ثبت نام</button>
+                <a href="student"><button>ورود به بخش دانشجویی <i class="fas fa-sign-in-alt"></i> </button></a>
+                <a href="signup.php"><button> <i class="fas fa-user-plus"></i>  ثبت نام</button></a>
               </div>
             </div>
             <div class="col-sm-6 ostad box">
@@ -22,11 +22,11 @@
                   اگر استاد هستید از اینجا وارد شوید <br>
                   <br>
                 </p><br>
-                <button>ورود به بخش استاد</button>
+                <a href="ostad"><button>ورود به بخش استاد</button></a>
               </div>
             </div>
           </div>
         </div>
-      </div>  
-    </div>'; 
+      </div>
+    </div>';
 include "includes/footer.php";?>
