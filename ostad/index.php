@@ -7,10 +7,10 @@
 					<div class="col-sm-3 head">
 						<i class="fas fa-user"></i> مشخصات شما
 					</div>
-					<div class="col-sm-3 head">
+					<div class="col-sm-6 head">
 						اخرین دانشجو های شما <i class="fas fa-list"></i>
 					</div>
-					<div class="col-sm-6 head">
+					<div class="col-sm-3 head">
 						دسترسی سریع
 					</div>
 				</div>
@@ -66,4 +66,5 @@
 			</div>
 		</div>
 	</div>
+	
 <?php include 'includes/footer.php'; ?>

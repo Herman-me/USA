@@ -405,3 +405,10 @@ body{
       border-radius: 5px;
       color:white;
     }
+
+    .but button{
+      width:30%;
+    }
+    .u button{
+      margin-right: 30px;
+    }
