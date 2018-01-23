@@ -37,4 +37,7 @@
 			</div>
 		</div>
 	</div>
+
+	<?php $GLOBALS['mehdi'] = "salam dashia";
+	 ?> 
 <?php include 'includes/footer.php'; ?>
