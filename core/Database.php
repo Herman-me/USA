@@ -102,6 +102,11 @@ class Database
 
   }
 
+  public function add_score($id,$lessen_id)
+  {
+    
+  }
+
   /**
   * Escape values
   */
