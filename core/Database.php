@@ -46,6 +46,8 @@ class Database
     $escape = $this->escape($var);
     $insert_in_student = $this->link->query("INSERT INTO student(fname,code) VALUES('$escape[0]','$escape[1]')");
     if ($insert_in_student) {
+      session_start();
+      $_SESSION['registered_st'] = $var;
       return TRUE;
     }
     else{
@@ -83,6 +85,23 @@ class Database
     else{return FALSE;}
   }
 
+  public function add_lessen($st_id,$lessens)
+  {
+    $escaped_lessens = $this->escape($lessens);
+    $escaped_st_id = $st_id;
+    // $lessens = $escaped[0].",".$escaped[1].",".$escaped[2].",".$escaped[3];
+    foreach ($escaped_lessens as $key => $value) {
+      $result = $this->link->query("INSERT INTO selected_lessen(for_st,lessen) VALUES('$st_id',".$value.")");
+    }
+    if ($result) {
+      return false;
+    }
+    else{
+      return TRUE;
+    }
+
+  }
+
   /**
   * Escape values
   */
@@ -109,7 +128,9 @@ class Database
 
 
 $mehdi = new Database;
-$ins = $mehdi->register_st("مهدی رحیکی",2451);
+$st_id = 5;
+$lessens = array(4,5,3,4);
+$addls = $mehdi->add_lessen($st_id,$lessens);
 
 
 
