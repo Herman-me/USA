@@ -1,10 +1,5 @@
 <?php
-define("DB_HOST", "localhost");
-
-
-function mehdi($value='')
-{
-	echo $mehdi;
-}
-
-mehdi();
+define("DB_HOST" , "localhost");
+define("DB_NAME" , "ST");
+define("DB_USER" , "root");
+define("DB_PASS" , "");

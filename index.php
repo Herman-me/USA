@@ -1,4 +1,5 @@
 <?php include "includes/header.php";
+
     echo
     '<div class="container">
       <div class="row">
@@ -12,7 +13,7 @@
                   شما باید همه ی <a href="">قوانین</a> استفاده از وبسایت را مطالعه کنید
                 </p><br>
                 <a href="student"><button>ورود به بخش دانشجویی <i class="fas fa-sign-in-alt"></i> </button></a>
-                <a href="signup.php"><button> <i class="fas fa-user-plus"></i>  ثبت نام</button></a>
+                <a href="signupst.php"><button> <i class="fas fa-user-plus"></i>  ثبت نام</button></a>
               </div>
             </div>
             <div class="col-sm-6 ostad box">
