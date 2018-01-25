@@ -29,13 +29,44 @@ class Database
 
   public function get_all_table($table)
   {
-    $this->link->real_escape_string($table);
-    $res = $this->link->query("SELECT * FROM $table");
+    $table = $this->link->real_escape_string($table);
+    $res = $this->link->query("SELECT * FROM '$table'");
     if ($res->num_rows > 0) {
       return $res;
     }
     return FALSE;
   }
+
+  /**
+  * Get all with id
+  */
+  public function get_all_whith_id($id,$table)
+  {
+    $ar = array($id,$table);
+    $results = $this->link->query("SELECT * FROM '$table' WHERE id=$id");
+    if ($result->num_rows > 0) {
+      return $result;
+    }
+    else{
+      return FALSE;
+    }
+  }
+
+  /**
+  * Get last co
+  */
+  public function get_last_row($table)
+  {
+    $table = $this->escape($table);
+    $result = $this->link->query("SELECT * FROM $table ORDER BY id DESC LIMIT 1");
+    if ($result->num_rows > 0) { 
+      return $result;
+    }
+    else{
+      return FALSE;
+    }
+  }
+
 
   /**
   * Insert into Database Student Table
@@ -62,7 +93,7 @@ class Database
   {
     $var = array($fname,$personalcode);
     $escape = $this->escape($var);
-    $insert_in_teacher = $this->link->query("INSERT INTO student(fname,personalcode) VALUES('$escape[0]','$escape[1]')");
+    $insert_in_teacher = $this->link->query("INSERT INTO ostad(fname,personalcode) VALUES('$escape[0]','$escape[1]')");
     if ($insert_in_teacher) {
       return TRUE;
     }
@@ -74,7 +105,7 @@ class Database
   /**
   * Select lessen for ostad
   */
-  public function select_lessen($id,$lessen)
+  public function select_lessen_os($id,$lessen)
   {
     $ar = array($id,$lessen);
     $escaped = $this->escape($ar);
@@ -85,7 +116,7 @@ class Database
     else{return FALSE;}
   }
 
-  public function add_lessen($st_id,$lessens)
+  public function add_lessen_st($st_id,$lessens)
   {
     $escaped_lessens = $this->escape($lessens);
     $escaped_st_id = $st_id;
@@ -102,9 +133,17 @@ class Database
 
   }
 
-  public function add_score($id,$lessen_id)
+  /**
+  * Add score to The students
+  */
+  public function add_score($id,$lessen_id,$score)
   {
-    
+    $escaped = array($id,$lessen_id,$score);
+    $id = $escaped[0];
+    $lessen_id = $escaped[1];
+    $score = $escaped[2];
+
+    $add_score = $this->link->query("UPDATE selected_lessen SET score='$score' WHERE for_st='$id' AND lessen='$lessen_id'");
   }
 
   /**
@@ -126,16 +165,47 @@ class Database
     return $result;
   }
 
-
+/**
+* Get real ip adress
+*/
+function get_real_ip_adress()
+{
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+    {
+      $ip=$_SERVER['HTTP_CLIENT_IP'];
+    }
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+    {
+      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    else
+    {
+      $ip=$_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
 }
 
 
+/**
+* check if is logged in
+**/
+public function check_logged_in($type)
+{
+  if ($type == 't') { 
+    if (!isset($_SESSION['t_logged_in'])) {
+        header("Location: ../index.php");
+    }
+    else{
+      if (!isset($_SESSION['s_logged_in'])) {
+          header("Location: ../index.php");
+      }
+    }
+  }
+}
 
-
-$mehdi = new Database;
-$st_id = 5;
-$lessens = array(4,5,3,4);
-$addls = $mehdi->add_lessen($st_id,$lessens);
+}
+// $mehdi = new Database;
+// $add_score = $mehdi->add_score(5,3,19);
 
 
 

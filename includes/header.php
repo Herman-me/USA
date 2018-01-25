@@ -1,3 +1,4 @@
+<?php  session_start();?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,7 +21,22 @@
     <!-- Font awesome new -->
     <script defer src="ass/js/fontawesome-all.js"></script>
 
-  
+    
+      <!-- JQuery -->
+      <script type="text/javascript" src="ass/js/jquery.js"></script>
+      <!-- Main js -->
+      <script type="text/javascript" src="ass/js/main.js"></script>
+
+
 
   </head>
   <body>
+<?php if (isset($_GET['error'])): ?>
+    <?php 
+        $error = htmlentities($_GET['error']);
+    ?>
+
+    <div class="error">
+        <h4><i class="fas fa-times" id="close"></i>  <?php echo $error; ?></h4>
+    </div>
+<?php endif ?>

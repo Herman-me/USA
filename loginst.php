@@ -1,4 +1,6 @@
-<?php include 'includes/header.php';?>
+<?php include '../includes/header.php';?>
+<?php include '../core/Database.php';?>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 singupPage" id="page">
@@ -11,7 +13,7 @@
 							 	<input type="text" name="fname"><br><br>
 							 	<span>شماره پرسنلی :</span><br>
 							 	<input type="number" name="personalcode"><br><br>
-							 	<input type="submit" name="submit" value="عضویت">
+							 	<input type="submit" name="submit" value="ورود">
 							 </div>
 
 						</form>
@@ -27,4 +29,4 @@
 			</div>
 		</div>
 	</div>
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

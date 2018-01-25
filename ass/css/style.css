@@ -434,3 +434,21 @@ body{
     .u button{
       margin-right: 30px;
     }
+    .error{
+      height:45px;
+      background-color:#ff000080;
+      padding:2px;
+      width:40%;
+      color:white;
+      z-index: 10;
+      display: block ;
+      position: absolute;
+      top:20px;
+      right:100px;
+    }
+    .error h4{
+      text-align: center;
+    }
+    .error svg{
+      margin-left: 5px;
+    }

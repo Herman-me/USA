@@ -1,4 +1,8 @@
 	<?php include 'includes/header.php'; ?>
+	<?php include '../core/Database.php'; ?>
+	<?php $db = new Database;
+		$db->check_logged_in('t');
+	 ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 ostadPage">
@@ -19,12 +23,12 @@
 				<div class="row">
 					<div class="col-sm-3 userinfo">
 						<i class="fas fa-user"></i>
-						<h5>نام و نام خوانوادگی: مهدی رحیمی</h5>
-						<h5>Personal Code : <span style="color:red">245</span></h5>
+						<h5>نام و نام خوانوادگی: <?php echo $_SESSION['os_info']['full_name']; ?></h5>
+						<h5>Personal Code : <span style="color:red"><?php echo $_SESSION['os_info']['personalcode']; ?></span></h5>
 						<p>توضیحات : <br>
 							اقای مهدی رحیمی مدرس درس های دینی و تاریخ و با علاقه بودن شغل انبیا است
 						</p>
-						<h5>تعداد دانشجویان : <span style="color:red"> 14</span></h5>
+						<h5>تعداد دانشجویان : <span style="color:red"> <?php echo 'درسی انتخاب نشده'; ?></span></h5>
 						<h5>آخرین مدرک تحصیلی : <span style="color:green">دکترا</span></h5>
 						<button>انتخاب درس</button>
 					</div>
@@ -32,11 +36,6 @@
 						<i class="fas fa-graduation-cap"></i>
 						<div class="listSt">
 							<ul>
-								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
-								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
-								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
-								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
-								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
 								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
 								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
 								<li><a href="">مهدی رحیمی</a> در درس ریاضی</li>
